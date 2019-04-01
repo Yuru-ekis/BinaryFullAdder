@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="欢迎使用二进制全加器"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/switch_BD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前为二进制操作模式"/>
+
+        <TextView
+            android:id="@+id/indicator_BD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切换二进制和十进制操作模式"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入被加数"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/input_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入加数"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计算!"/>
+
+
+
+    <TextView
+        android:id="@+id/text_showresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结果为"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
